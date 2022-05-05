@@ -16,6 +16,9 @@ my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.co
 #Choose the Fruit Name Column as the Index
 my_fruit_list = my_fruit_list.set_index('Fruit')
 
+#filter the table data based on the fruits a customer will choose, so we'll pre-populate the list to set an example for the customer. 
+streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado','Strawberries'])
+
 #Put a picklist
 streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
 
