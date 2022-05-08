@@ -24,7 +24,7 @@ fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.
 #fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
 #fruits_to_show = my_fruit_list.loc[fruits_selected]
 #Then, we'll ask our app to use the fruits in our fruits_selected list to pull rows from the full data set
-#streamlit.dataframe(fruits_to_show)
+streamlit.dataframe(fruits_selected)
 
 #Put a picklist
 #streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
