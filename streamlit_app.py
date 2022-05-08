@@ -32,7 +32,7 @@ fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.
 #display fruit table on page
 #streamlit.dataframe(my_fruit_list)
 
-streamlit.header Build('Fruityvice Fruit Advice')
+streamlit.header('Fruityvice Fruit Advice')
 import requests
 fruityvice_responce = requests.get("https://fruityvice.com/api/fruit/watermelon")
 streamlit.text(fruityvice_responce.json())
