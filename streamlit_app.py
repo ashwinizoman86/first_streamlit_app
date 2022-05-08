@@ -34,7 +34,7 @@ fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.
 
 streamlit.header('Fruityvice Fruit Advice')
 import requests
-fruityvice_responce = requests.get("https://fruityvice.com/api/fruit/watermelon")
+fruityvice_responce = requests.get("https://fruityvice.com/api/fruit/watermelon" + "kiwi")
 
 
 #take the json version of the responce and normalize it
