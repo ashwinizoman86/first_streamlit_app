@@ -34,11 +34,11 @@ fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.
 
 streamlit.header('Fruityvice Fruit Advice')
 import requests
-fruityvice_responce = requests.get("https://fruityvice.com/api/fruit/watermelon" + "kiwi")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
 
 
-#take the json version of the responce and normalize it
-fruityvice_normalised = pandas.json_normalize(fruityvice_responce.json())
+#take the json version of the response and normalize it
+fruityvice_normalised = pandas.json_normalize(fruityvice_response.json())
 #output it the screen as a table
 streamlit.dataframe(fruityvice_normalised)
 
