@@ -34,6 +34,7 @@ streamlit.dataframe(fruits_to_show)
 #display fruit table on page
 #streamlit.dataframe(my_fruit_list)
 
+
 streamlit.header('Fruityvice Fruit Advice')
 
 
@@ -49,6 +50,8 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_c
 fruityvice_normalised = pandas.json_normalize(fruityvice_response.json())
 #output it the screen as a table
 streamlit.dataframe(fruityvice_normalised)
+
+import snowflake.connector
 
 
 
