@@ -67,6 +67,3 @@ streamlit.text("The fruit_load_list contains:")
 streamlit.text(my_data_row)
 
 
-
-
-
