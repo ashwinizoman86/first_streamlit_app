@@ -34,8 +34,6 @@ streamlit.dataframe(fruits_to_show)
 
 streamlit.header('Fruityvice Fruit Advice')
 
-import snowflake.connector
-
 fruit_choice = streamlit.text_input('what fruit would you like information about?', 'kiwi')
 streamlit.write('The user entered', fruit_choice)
                 
@@ -48,4 +46,4 @@ fruityvice_normalised = pandas.json_normalize(fruityvice_response.json())
 #output it the screen as a table
 streamlit.dataframe(fruityvice_normalised)
 
-
+import snowflake.connector
